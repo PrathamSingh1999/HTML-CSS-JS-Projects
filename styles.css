@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0B2A4E; /* Dark navy background */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    text-align:left;
+    background-color: #0B2A4E;
+    border-radius: 10px;
+    /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);*/
+    margin-right:600px;
+}
+
+#whiteText {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+
+#greenText {
+    font-size: 1.5em;
+    color: #43a047; 
+    margin-bottom: 20px;
+}
+
+
+#password-container {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #ddd; 
+    border-radius: 5px; 
+    padding: 5px; 
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#password {
+    border: none; 
+    outline: none; 
+    font-size: 1.2em; 
+    color: #333; 
+    padding: 2px 5px; 
+    width: 250px; 
+    background-color:transparent;
+}
+
+.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 30px;
+    margin-left: 10px;
+    color: #43a047; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+button {
+    background-color: #43a047;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top:20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+input, textarea {
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .main {
+        margin-right: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-right: 0;
+        margin-left:30px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #password {
+        width: 100%;
+    }
+
+    #whiteText, #greenText {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+
+    .copy-btn {
+        width: 30px;
+        height: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main {
+        margin-right:20px;
+        width: 90%; 
+        padding: 20px;
+    }
+
+    #whiteText, #greenText {
+        font-size: 1.5em;
+    }
+
+    #password {
+        width: 100%; 
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
